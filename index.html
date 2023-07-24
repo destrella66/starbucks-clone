@@ -15,7 +15,8 @@
     <header>
       <nav class="navbar">
         <img src="/src/img/logo.png" alt="Logo Starbucks" />
-        <ul>
+        <div class="toggleMenu" onclick="toggleMenu()"></div>
+        <ul class="navigation" onclick="navigationMenu()">
           <li><a href="#">Home</a></li>
           <li><a href="#">Menu</a></li>
           <li><a href="#">What's New</a></li>
@@ -45,6 +46,26 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div class="flavor">
+        <img
+          src="/src/img/thumb1.png"
+          onclick="imgSlider('src/img/img1.png');ballSlider('#017143')"
+          alt="Coffee"
+        />
+        <img
+          src="/src/img/thumb2.png"
+          onclick="imgSlider('src/img/img2.png');ballSlider('#eb7495')"
+          alt="Coffee"
+        />
+        <img
+          src="/src/img/thumb3.png"
+          onclick="imgSlider('src/img/img3.png');ballSlider('#d752b1')"
+          alt="Coffee"
+        />
+      </div>
+    </footer>
+
     <div class="social">
       <ul>
         <li>
@@ -66,25 +87,6 @@
         </li>
       </ul>
     </div>
-    <footer>
-      <div class="flavor">
-        <img
-          src="/src/img/thumb1.png"
-          onclick="imgSlider('src/img/img1.png');ballSlider('#017143')"
-          alt="Coffee"
-        />
-        <img
-          src="/src/img/thumb2.png"
-          onclick="imgSlider('src/img/img2.png');ballSlider('#eb7495')"
-          alt="Coffee"
-        />
-        <img
-          src="/src/img/thumb3.png"
-          onclick="imgSlider('src/img/img3.png');ballSlider('#d752b1')"
-          alt="Coffee"
-        />
-      </div>
-    </footer>
 
     <!-- Scripts -->
     <script>
@@ -94,6 +96,12 @@
       function ballSlider(color) {
         const ball = document.querySelector(".ball");
         ball.style.background = color;
+      }
+      function toggleMenu() {
+        const toggleMenu = document.querySelector(".toggleMenu");
+        const navigationMenu = document.querySelector(".navigation");
+        navigationMenu.classList.toggle("active");
+        toggleMenu.classList.toggle("active");
       }
     </script>
   </body>
