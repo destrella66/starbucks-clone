@@ -262,19 +262,20 @@ footer .flavor {
     user-select: none;
     padding-bottom: 50px;
   }
-}
-.social {
-  padding: 0;
-  height: 200px;
-}
-.social ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  height: 70%;
-}
-.social ul li {
-  margin: 0;
-  padding: 0;
+
+  .social {
+    padding: 0;
+    height: 200px;
+  }
+  .social ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 70%;
+  }
+  .social ul li {
+    margin: 0;
+    padding: 0;
+  }
 }
