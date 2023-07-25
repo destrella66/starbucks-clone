@@ -139,6 +139,9 @@ footer .flavor {
   transition: 0.4s;
   cursor: pointer;
 }
+footer .flavor img::selection {
+  background: transparent;
+}
 .flavor img:hover {
   transform: translateY(-15px);
 }
